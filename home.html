@@ -1,0 +1,903 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Class 9F MDIS89</title>
+
+
+
+
+
+
+    
+<style>.column{
+    width: 25%!important;
+    margin-bottom: 1rem;
+    text-align: left;
+
+}
+
+.col-lg-6{
+    text-align: left;
+    margin-top: 2rem!important;
+}
+        .basic-2 .text-box {
+      margin-bottom: 3rem;
+      padding: 3.5rem 1rem 2.125rem 1rem;
+      border: 1px solid #cfd7de;
+        }
+      
+      .bg-gray {
+      	background-color: #f7f9fb;
+      }
+      
+      .section-divider {
+      	display: block;
+      	height: 1px;
+      	margin: 0;
+      	border: none;
+      	background-color: #d3dae2;
+      }
+      
+      .btn-solid-reg {
+      	display: inline-block;
+      	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+      	border: 1px solid #0b36a8;
+      	background-color: #0b36a8;
+      	color: #ffffff;
+      	font-weight: 600;
+      	font-size: 0.875rem;
+      	line-height: 0;
+      	text-decoration: none;
+      	transition: all 0.2s;
+      }
+      
+      .btn-solid-reg:hover {
+      	background-color: transparent;
+      	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+      	text-decoration: none;
+      }
+      
+      .btn-solid-lg {
+      	display: inline-block;
+      	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+      	border: 1px solid #0b36a8;
+      	background-color: #0b36a8;
+      	color: #ffffff;
+      	font-weight: 600;
+      	font-size: 0.875rem;
+      	line-height: 0;
+      	text-decoration: none;
+      	transition: all 0.2s;
+      }
+      
+      .btn-solid-lg:hover {
+      	background-color: transparent;
+      	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+      	text-decoration: none;
+      }
+      
+      .btn-outline-reg {
+      	display: inline-block;
+      	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+      	border: 1px solid #24262a;
+      	background-color: transparent;
+      	color: #24262a;
+      	font-weight: 600;
+      	font-size: 0.875rem;
+      	line-height: 0;
+      	text-decoration: none;
+      	transition: all 0.2s;
+      }
+      
+      .btn-outline-reg:hover {
+      	background-color: #24262a;
+      	color: #ffffff;
+      	text-decoration: none;
+      }
+      
+      .btn-outline-lg {
+      	display: inline-block;
+      	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+      	border: 1px solid #24262a;
+      	background-color: transparent;
+      	color: #24262a;
+      	font-weight: 600;
+      	font-size: 0.875rem;
+      	line-height: 0;
+      	text-decoration: none;
+      	transition: all 0.2s;
+      }
+      
+      .btn-outline-lg:hover {
+      	background-color: #24262a;
+      	color: #ffffff;
+      	text-decoration: none;
+      }
+      
+      .btn-outline-sm {
+      	display: inline-block;
+      	padding: 1rem 1.5rem 1rem 1.5rem;
+      	border: 1px solid #24262a;
+      	background-color: transparent;
+      	color: #24262a;
+      	font-weight: 600;
+      	font-size: 0.875rem;
+      	line-height: 0;
+      	text-decoration: none;
+      	transition: all 0.2s;
+      }
+      
+      .btn-outline-sm:hover {
+      	background-color: #24262a;
+      	color: #ffffff;
+      	text-decoration: none;
+      }
+      
+      .form-group {
+      	position: relative;
+      	margin-bottom: 1.25rem;
+      }
+      
+      .label-control {
+      	position: absolute;
+      	top: 0.875rem;
+      	left: 1.5rem;
+      	color: #7d838a;
+      	opacity: 1;
+      	font-size: 0.875rem;
+      	line-height: 1.375rem;
+      	cursor: text;
+      	transition: all 0.2s ease;
+      }
+      
+      .form-control-input:focus + .label-control,
+      .form-control-input.notEmpty + .label-control,
+      .form-control-textarea:focus + .label-control,
+      .form-control-textarea.notEmpty + .label-control {
+      	top: 0.125rem;
+      	color: #4d5055;
+      	opacity: 1;
+      	font-size: 0.75rem;
+      	font-weight: 700;
+      }
+      
+      .form-control-input,
+      .form-control-select {
+      	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+      	width: 100%;
+      	padding-top: 1.125rem;
+      	padding-bottom: 0.125rem;
+      	padding-left: 1.5rem;
+      	border: 1px solid #cbcbd1;
+      	background-color: #ffffff;
+      	color: #4d5055;
+      	font-size: 0.875rem;
+      	line-height: 1.875rem;
+      	transition: all 0.2s;
+      	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+      }
+      
+      .form-control-select {
+      	padding-top: 0.5rem;
+      	padding-bottom: 0.5rem;
+      	height: 3.25rem;
+      	color: #7d838a;
+      }
+      
+      select {
+          /* you should keep these first rules in place to maintain cross-browser behavior */
+          -webkit-appearance: none;
+      	-moz-appearance: none;
+      	-ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+          background-image: url('../images/down-arrow.png');
+          background-position: 96% 50%;
+          background-repeat: no-repeat;
+          outline: none;
+      }
+      
+      .form-control-textarea {
+      	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+      	width: 100%;
+      	height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+      	padding-top: 1.5rem;
+      	padding-left: 1.3125rem;
+      	border: 1px solid #cbcbd1;
+      	background-color: #ffffff;
+      	color: #4d5055;
+      	font-size: 0.875rem;
+      	line-height: 1.5rem;
+      	transition: all 0.2s;
+      }
+      
+      .form-control-input:focus,
+      .form-control-select:focus,
+      .form-control-textarea:focus {
+      	border: 1px solid #a1a1a1;
+      	outline: none; /* Removes blue border on focus */
+      }
+      
+      .form-control-input:hover,
+      .form-control-select:hover,
+      .form-control-textarea:hover {
+      	border: 1px solid #a1a1a1;
+      }
+      
+      .checkbox {
+      	font-size: 0.75rem;
+      	line-height: 1.25rem;
+      }
+      
+      input[type='checkbox'] {
+      	vertical-align: -10%;
+      	margin-right: 0.5rem;
+      }
+      
+      .form-control-submit-button {
+      	display: inline-block;
+      	width: 100%;
+      	height: 3.25rem;
+      	border: 1px solid #0b36a8;
+      	border-radius: 32px;
+      	background-color: #0b36a8;
+      	color: #ffffff;
+      	font-weight: 600;
+      	font-size: 0.875rem;
+      	line-height: 0;
+      	cursor: pointer;
+      	transition: all 0.2s;
+      }
+      
+      .form-control-submit-button:hover {
+      	border: 1px solid #24262a;
+      	background-color: transparent;
+      	color: #24262a;
+      }
+      
+  
+      
+      /*******************/
+      /*     Details     */
+      /*******************/
+      .split .area-1 {
+      	height: 430px;
+      	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
+      	background-size: cover;
+      }
+      
+      .split .area-2 {
+      	padding-top: 7.75rem;
+      	padding-bottom: 7.75rem;
+      }
+      
+      .split p {
+      	margin-bottom: 2.25rem;
+      }
+      
+      .split .icons-container {
+      	margin-top: 3rem;
+      }
+      
+      .split .icons-container img {
+      	width: 50px;
+      	margin-right: 0.625rem;
+      	margin-bottom: 0.75rem;
+      }
+
+	.container {
+		padding: 10px;
+		text-align: center;
+	}
+      
+      
+      /********************/
+      /*     Projects     */
+      /********************/
+      .basic-3 {
+      	padding-top: 7.75rem;
+      	padding-bottom: 1rem;
+      }
+      
+      .basic-3 .h2-heading {
+      	margin-bottom: 0.75rem;
+      	text-align: center;
+      }
+      
+      .basic-3 .p-heading {
+      	margin-bottom: 4rem;
+      	text-align: center;
+      }
+      
+      .basic-3 .text-container {
+      	margin-bottom: 4rem;
+      }
+      
+      .basic-3 .image-container {
+      	margin-bottom: 1rem;
+      }
+      
+      /* Hover Animation */
+      .basic-3 .image-container {
+      	overflow: hidden;
+      	margin-right: auto;
+      	margin-left: auto;
+      }
+      
+      .basic-3 .image-container img {
+      	margin: 0;
+      	transition: all 0.2s;
+      }
+      
+      .basic-3 .image-container:hover img {
+      	-moz-transform: scale(1.1);
+      	-webkit-transform: scale(1.1);
+      	transform: scale(1.1);
+      } 
+      /* end of hover animation */
+      
+      
+      /*****************/
+      /*     Works     */
+      /*****************/
+      .basic-4 {
+      	padding-bottom: 1rem;
+      }
+      
+      .basic-4 .text-container {
+      	margin-bottom: 4rem;
+      }
+      
+      .basic-4 .image-container {
+      	margin-bottom: 1rem;
+      }
+      
+      /* Hover Animation */
+      .basic-4 .image-container {
+      	overflow: hidden;
+      	margin-right: auto;
+      	margin-left: auto;
+      }
+      
+      .basic-4 .image-container img {
+      	margin: 0;
+      	transition: all 0.2s;
+      }
+      
+      .basic-4 .image-container:hover img {
+      	-moz-transform: scale(1.15);
+      	-webkit-transform: scale(1.15);
+      	transform: scale(1.15);
+      } 
+      /* end of hover animation */
+      
+      
+      
+      
+      /******************************/
+      /*     Back To Top Button     */
+      /******************************/
+      a.back-to-top {
+      	position: fixed;
+      	z-index: 999;
+      	right: 12px;
+      	bottom: 12px;
+      	display: none;
+      	width: 42px;
+      	height: 42px;
+      	border-radius: 30px;
+      	background: #3a424d url("../images/up-arrow.png") no-repeat center 47%;
+      	background-size: 18px 18px;
+      	text-indent: -9999px;
+      }
+      
+      a:hover.back-to-top {
+      	background-color: #0b36a8;
+      }
+      
+      
+  
+      
+      
+      /*************************/
+      /*     Media Queries     */
+      /*************************/	
+      /* Min-width 768px */
+      @media (min-width: 768px) {
+      
+      	/* Header */
+      	.header {
+      		padding-top: 11rem;
+      		padding-bottom: 9rem;
+      	}
+      	/* end of header */
+      
+      
+      	/* Services */
+      	.basic-2 .text-box {
+      		padding-right: 2.125rem;
+      		padding-left: 2.125rem;
+      	}
+      	/* end o…</style><link href="style.css" rel="stylesheet" type="text/css"></head>
+
+<body>
+    <div class="container" style="">
+        <header class="d-flex flex-wrap justify-content-center py-3 border-bottom" style="
+">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" style="margin-right: 0!important;">
+                
+                <span class="fs-4">Welcome to the one and only website of Class 9F MDIS89 for Academic Session 2024-2025!</span>
+            </a>
+
+            
+        </header>
+    </div>
+    <div class="px-4 my-5 text-center">
+    <h1 class="display-4 fw-bold">Class 9F 2024-2025</h1>
+    <div class="col-lg-6 mx-auto" style="
+    margin-top: 0!important;
+">
+      <p class="lead mb-4" style="
+    text-align: center;
+">The class which has made its impact in a way no other class can!</p>
+      
+    </div>
+    <div class="overflow-hidden" style="/* max-height: 30vh; */">
+      <div class="container px-5">
+        <img src="https://instagram.fdel1-4.fna.fbcdn.net/v/t1.15752-9/456753123_1031061631555006_9190779729463464731_n.png?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=0024fc&amp;_nc_ohc=vJyp_00DBp8Q7kNvgEYweWD&amp;_nc_ht=instagram.fdel1-4.fna&amp;oh=03_Q7cD1QHSu7_HggMEM-CIXLyrn1NaWh0i2LG8nG3cnkp7Yt_zQg&amp;oe=66FFF40D" class="img-fluid border rounded-3-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <h1 class="display-5 fw-bold text-body-emphasis" style="margin-left: auto; margin-right: auto; text-align: center; margin-bottom:     0.5rem; margin-top: 3.5rem;" "=""><u>Meet the Students of Class 9F</u></h1>
+    <div class="container marketing" style="max-width: 85%;margin-top: 2rem;">
+<div class="row" style="">
+  <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" style="
+">
+    <div class="card">
+      
+      <div class="container">
+        <h2>Gopal Rathi</h2><h3 class="title">Class Prefect</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      
+      <div class="container">
+        <h2>Rishima Rana</h2><h3 class="title">English Prefect</h3>
+      </div>
+    </div>
+  </div>
+  
+    <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      
+      <div class="container">
+        <h2>Ikshit Sethi</h2><h3 class="title">Web Designer</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      
+      <div class="container">
+        <h2>Pihu Rawat</h2><h3 class="title">Class Prefect</h3>
+      </div>
+    </div>
+  </div>
+  
+      <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Abani Singh</h2>
+      </div>
+    </div>
+  </div>
+  
+       <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Abhinav Tiwari</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Adhiraj Singh</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Archit Saxena</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Arpit Mittal</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Aryaa Mangla</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Bhavya Singh</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Delisha</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Garvit</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Gopal Rathi</h2>
+      </div>
+    </div>
+  </div>
+    
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Harshit Sharma</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Kamya</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Kanika Jha</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Kartik Bhargava</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Kavya Narula</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Khushi</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Manit Sharma</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Maullick Kathuria</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Nivya Anand</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Omanan Kaushik</h2>
+      </div>
+    </div>
+  </div>
+          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Rishika</h2>
+      </div>
+    </div>
+  </div>
+
+          
+
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Sakshi Gupta</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Sakshi Kumari</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Samar Kumar</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Samriddh</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Sanvi Arya</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Sanyam</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Shaayan Hamid</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Soham Gupta</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Somansh Pandey</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Sparsh Singhla</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Srijan</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Suhani Das</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Tanya</h2>
+      </div>
+    </div>
+  </div>
+	          <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Yashvardhan</h2>
+      </div>
+    </div>
+  </div>
+	
+  <div class="column aos-init aos-animate" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div class="card">
+      <div class="container">
+        <h2>Rachit (LTS)</h2>
+      </div>
+    </div>
+  </div></div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <h1 class="display-5 fw-bold text-body-emphasis" style="margin-left: auto; margin-right: auto; text-align: center; margin-bottom:     0.5rem; margin-top: 3.5rem;" "=""><u>Meet the Teachers of Class 9F</u></h1>
+    <div class="container col-xxl-8 px-4 py-4 right">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+            <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Physics Guruji - Arjun Sir</h1>
+                <p class="lead">Physics is a broad subject, and the best way to learn physics is through understanding it. This understanding is made 10x easier when the physics teacher ensures the class stays humouress and inter-connected to ensure monotony does not take over. Understanding physics has been made very easy by class 9F's physics teacher, Arjun sir. Arjun sir displays an absolute amazing understanding of all concepts in detail, ready to answer any random doubts that arise at any instant of time rapidly.
+</p>
+            </div>
+            
+            <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">The Class Teacher - Karishma Ma'am</h1>
+                <p class="lead">Ever heard of fun and discipline being in balance? If not, then attending Karishma maam's classes will definitely persuade you to change your perspective. She is the teacher who has explained geography and economics in a way no one else did. Her abilities do not end here; she is the best and ideal class in-charge with all the merits to her name. We are so thankful to have Karishma maam as our class teacher, as well as our respective subject teacher for Geography and Economics!</p>
+            </div>
+        <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Biology Teacher - Jyoti Ma'am</h1>
+                <p class="lead">Jyoti Ma'am, being an absolute wonderful teacher, has mastered the art of teaching Biology. Most students feel that Biology's worst part is the cramming the memorization, but what if a teacher made all that go away? That's Jyoti maam for you with her brilliantly worded acronyms and teaching methods. Biology has never been easier to learn ever since Jyoti maam started teaching our class. We, the students, are extremely thankful to have such a great teacher that remembers each line of NCERT along with its whereabouts by heart and memory!<br></p>
+            </div><div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Chemistry Teacher - Neetu Ma'am</h1>
+                <p class="lead">If tasked with identifying the most affable instructor within the realm of chemistry, she would undoubtedly emerge as the preeminent candidate. Her presence within the chemistry classroom establishes a dynamic and stimulating environment, fostering an ardent inclination to delve into the intricacies of the subject. Her contagious smile serves as a catalyst for our enthusiastic learning endeavors. Her pedagogical approach effectively transforms the often-complex concepts of chemistry into engaging and comprehensible lessons, igniting our curiosity and fostering a deep appreciation for the subject.</p>
+            </div><div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Mathematics Teacher - Ankit Sir</h1>
+                <p class="lead">Understanding mathematics is no easy job for many, especially for students. Class 9F is an amalgamation of students, both brilliant and learnent in nature and especially in the field of maths there co-exists to sides to the ability of the classroom. The entire class believes that no one besides Ankit sir has the capability to handle such a diverse class and lead it together, as a team. We thank Ankit sir for the amazing teachings.</p>
+            </div><div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">French Teacher - Himani Ma'am</h1>
+                <p class="lead">If you are a French student and are feared of French, it can be so obviously implied that you have never studied from the Goddess like Teacher of French, Himani Ma'am! From making students understand concepts, to retaining them, even to making sure students have fun while learning french - she makes everything just so easy that her students remember her even long-long after they stop learning french!</p>
+            </div><div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Hindi Teacher - Jaimala Ma'am</h1>
+                <p class="lead">She is the person who has taught hindi not just as a subject but more of a feeling. Whoever has despised Hindi has come to take a liking to it. With equal shares of affection, attention and fun we thrill during the slot. Her aura has shaped the monotonous classroom into a vivid scenery . We actually love her jeers and jibes. We are totally aware of the fact that we have caused her trouble and we promise 'We will cause her trouble'</p>
+            </div><div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">History/Civics Teacher - Tanvi Ma'am</h1>
+                <p class="lead">A teacher so great and so divine, as cool as water and fabulous in every aspect—how do you put it? You call her Tanvi ma'am. She’s not the one who’ll keep you confined to the pages of your books; instead, she’ll force you out in the best of ways to shine brighter. Everyone might dread history, but if you’re sitting in a class with her teaching, you have no option but to listen with a joyous heart and rapt attention.</p>
+            </div>
+            
+            
+            
+            
+            <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Computer (IT) Teacher - Sarita Ma'am</h1>
+                <p class="lead">It's a rare gem to find a teacher who exudes a tough exterior while harboring a gentle heart. Sarita ma'am is one such individual. Underneath her firm demeanor lies a compassionate soul that nurtures her students' growth.
+
+Prior to her arrival, computers were merely tools for us, devoid of excitement. However, her infectious enthusiasm ignited a newfound passion for technology. It's truly a blessing to be guided by someone so radiant and approachable. Her dedication to her students is evident in her unwavering commitment to their success. She goes above and beyond to ensure that we grasp the concepts thoroughly and develop a strong foundation in IT.
+
+
+</p>
+            </div>
+            
+            <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">English Teacher - Raksha Ma'am</h1>
+                <p class="lead">English is a brightning subject filled with various types of compositions, be it ballets, poems, storylines, plays, and often comprehension of such type of compositions gets very tough. However, this problem no longer concurrs when you have an absolutely marvalous English teacher, like Raksha maam. She is the teacher that ensures that the learning phase remains enjoyble and engaging for all the students seated in her class. Although her checking may be strict, it can be seen like a harsh beating to a child to ensure he doesn't repeat any faults in his life, which ultimately, serves a very big purpose. </p>
+            </div>
+        </div>
+        
+        </div><h1 class="display-5 fw-bold text-body-emphasis" style="margin-left: auto;margin-right: auto;text-align: center;margin-bottom:     0.5rem;" "=""><u>Class Oath and the Class Mascot</u></h1>
+
+
+
+<div class="container col-xxl-8 px-4 py-4 right">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/455698560_519347670458791_3854113618672999921_n.png?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=0024fc&amp;_nc_ohc=LHYPzV8tSa8Q7kNvgE-tNpr&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_Q7cD1QEX_tbpVMm61af42_HUoIvbBH1oP56Y0uHQolv8qiRfFg&amp;oe=66FFF90B" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">The Oath of Class 9F</h1>
+                <p class="lead">The class oath is a solemn promise taken by we students, and it holds significant importance in fostering a positive and supportive learning environment for our class. The wording of the Oath emphasizes the sense of unity and camaraderie among the students. By pledging to stand together, we students create a strong foundation for mutual respect and encouragement.
+
+Our oath also highlights the importance of knowledge and curiosity. This commitment to intellectual growth can inspire and motivate students to strive for excellence in our academic pursuits.
+
+Moreover, the oath addresses the challenges that students may face, such as difficult projects and demanding tests. By vowing to support one another, we students create a supportive atmosphere where they can rely on each other's help and encouragement. 
+
+</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    <div class="container col-xxl-8 px-4 py-4 left">
+        <div class="row flex-lg-row align-items-center g-5 py-4">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/456394242_1980387115746005_6290722266415614321_n.png?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=0024fc&amp;_nc_ohc=h0NL2j0x3YUQ7kNvgHmo9CV&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_Q7cD1QG8uGAQnQ5ytJhsMCja3IENtoJi0OzdynZ84w4QFUfZuA&amp;oe=66FFD783" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-10 fw-bold text-body-emphasis lh-1 mb-3" style="font-size: 2.2rem;">Mr. Funky, The Class Mascot of 9F</h1>
+                <p class="lead">Mr. Funky was not a student in our class; he was the guardian, the protector, and the caretaker of the Class 9F Oath. He was crowned the King of Class 9F and eventually became the beloved Class Mascot. Funky was held in high esteem by all his classmates and even by students from other classes. He was the embodiment of the oath's principles, guiding us towards unity and togetherness.
+
+Though his story remains a mystery, it's tragic that he is no longer with us. After living for more than 4 months and serving his duties on the Class Bulletin Board, Funky passed away in July 2024, leaving behind a legacy of leadership and inspiration. May he rest in eternal peace and may we one day avenge his death by finding the criminal that killed our beloved Funky.</p>
+            </div>
+        </div>
+    </div><div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="
+    border-top: 1px solid black!important;
+">
+    <div class="col-md-4 d-flex align-items-center" style="
+    width: 90%;
+    justify-content: left;
+    margin-left: 1rem;
+">
+      
+      <span class="mb-3 mb-md-0 text-muted" style="
+">The above website has been made by‏‏‎ ‎</span><span style="
+    color: black;
+    font-weight: bold;
+"> Ikshit Sethi</span><span>. Exclusive Copyright: All Rights Reserved under Indian Copyright Act, 1957</span>
+    </div>
+
+    
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="
+    width: auto;
+">
+      <li class="ms-3"><a href="https://www.linkedin.com/in/ikshitsethi/"><img width="24" height="24" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="
+    margin-right: 1rem;
+"></a></li>
+      
+      
+    </ul></footer>
+</div>
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

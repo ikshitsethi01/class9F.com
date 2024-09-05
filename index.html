@@ -398,7 +398,18 @@
       /*************************/	
       /* Min-width 768px */
       @media (min-width: 768px) {
-      
+
+	.mobflex{
+		display: flex;
+	}
+
+	.mobblock{
+		display: block;
+	}
+
+	.column{
+		width: 100%!important;
+	}
       	/* Header */
       	.header {
       		padding-top: 11rem;
@@ -858,7 +869,7 @@ Though his story remains a mystery, it's tragic that he is no longer with us. Af
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="
     border-top: 1px solid black!important;
 ">
-    <div class="col-md-4 d-flex align-items-center" style="
+    <div class="col-md-4 d-flex align-items-center mobblock" style="
     width: 90%;
     justify-content: left;
     margin-left: 1rem;
@@ -872,7 +883,7 @@ Though his story remains a mystery, it's tragic that he is no longer with us. Af
     </div>
 
     
-  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mobflex" style="
     width: auto;
 ">
       <li class="ms-3"><a href="https://www.linkedin.com/in/ikshitsethi/"><img width="24" height="24" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="
@@ -883,15 +894,6 @@ Though his story remains a mystery, it's tragic that he is no longer with us. Af
     </ul></footer>
 </div>
 <script src="script.js"></script>
-
-
-
-
-
-
-
-
-
 
 
 </body></html>
